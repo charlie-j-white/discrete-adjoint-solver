@@ -1,6 +1,6 @@
 # Discrete Adjoint Solver
 
-By Charlie Anderson for the UoB AEng Final Year Project module
+By Charlie Anderson for the UoB MEng Aerospace Engineering Final Year Project module
 
 
 ## Compile instructions
