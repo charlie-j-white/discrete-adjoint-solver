@@ -37,10 +37,14 @@ or for Ubuntu
 $ sudo apt-get install liblapack-dev
 ```
 
-##### Optional dependencies
+##### Optional dependencies:
 
+The optional dependencies are -
 
-If you do not have Tecplot installed you will need some way of visualising the program outputs. The Python scripts in `DEV/` use Matplotlib to read the `.plt` files.
+- `python`
+- Matplotlib
+
+in the case where you do not have Tecplot installed and need some way of visualising the program outputs. The Python scripts in `DEV/` use Matplotlib to read the `.plt` files, which can be installed with
 ```
 $ sudo pip install matplotlib
 ```
@@ -51,20 +55,21 @@ $ sudo pip install matplotlib
 
 ### Build instructions
 
-This program can easily be compiled on an up to date Linux system. Just follow the steps - 
-
-
-
+This program can easily be compiled on an up to date Linux system. Just follow the steps
 ```
 $ cd discrete-adjoint-solver/
-$ edit SRC/wrapper.f
 $ make
 $ ./main
 ```
+and this will create an executable. Feel free to edit the Makefile if needed.
 
 
-That's it! I'll update this file later probably
 
+
+## Program use
+
+
+How to use the program
 
 
 

@@ -74,8 +74,8 @@
 !     x cells      y cells
 !    
 !
-      nx = 100
-      ny = 10
+      nx = 40
+      ny = 5
 !    
 !    
 !      
