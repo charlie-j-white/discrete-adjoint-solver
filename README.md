@@ -3,16 +3,66 @@
 By Charlie Anderson for the UoB MEng Aerospace Engineering Final Year Project module
 
 
-## Compile instructions
+
+
+
+
+## Getting started
+
+
+
+```
+$ git clone https://github.com/charlie-j-white/discrete-adjoint-solver.git
+```
+
+
+
+
+
+### Dependencies
+
+
+
+For Arch-based distributions LAPACK can be downloaded with
+```
+sudo pacman -S lapack
+```
+or for Ubuntu
+
+```
+sudo apt-get install liblapack-dev
+```
+
+
+
+If you do not have Tecplot installed you will need some way of visualising the program outputs. The Python scripts in `DEV/` use Matplotlib to read the `.plt` files.
+```
+sudo pip install matplotlib
+```
+
+
+
+
+
+### Build instructions
 
 This program can easily be compiled on an up to date Linux system. Just follow the steps - 
 
-Step 1: $ cd discrete-adjoint-solver/
 
-Step 2: $ make
 
-Step 3: Sort out the inevitable errors. This will need gfortran which can easily be installed through the command line, and LAPack, try "$ sudo pacman -S lapack" or something.
+```
+$ cd discrete-adjoint-solver/
 
-Step 4: $ ./main
+$ edit SRC/wrapper.f
+
+$ make
+
+$ ./main
+```
+
 
 That's it! I'll update this file later probably
+
+
+
+
