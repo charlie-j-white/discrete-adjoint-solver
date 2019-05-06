@@ -9,11 +9,12 @@ By Charlie Anderson for the UoB MEng Aerospace Engineering Final Year Project mo
 
 ## Getting started
 
-
-
+If you have not downloaded this repository before, you will need to use git to clone a new one. Just copy and paste this into the command line:
 ```
 $ git clone https://github.com/charlie-j-white/discrete-adjoint-solver.git
 ```
+Then perform the following instructions to get a working executable:
+
 
 
 
@@ -21,23 +22,27 @@ $ git clone https://github.com/charlie-j-white/discrete-adjoint-solver.git
 
 ### Dependencies
 
+The mandatory dependencies are as follows -
 
+- `gfortran`
+- `gcc`
+- LAPACK
 
 For Arch-based distributions LAPACK can be downloaded with
 ```
-sudo pacman -S lapack
+$ sudo pacman -S lapack
 ```
 or for Ubuntu
-
 ```
-sudo apt-get install liblapack-dev
+$ sudo apt-get install liblapack-dev
 ```
 
+##### Optional dependencies
 
 
 If you do not have Tecplot installed you will need some way of visualising the program outputs. The Python scripts in `DEV/` use Matplotlib to read the `.plt` files.
 ```
-sudo pip install matplotlib
+$ sudo pip install matplotlib
 ```
 
 
@@ -52,11 +57,8 @@ This program can easily be compiled on an up to date Linux system. Just follow t
 
 ```
 $ cd discrete-adjoint-solver/
-
 $ edit SRC/wrapper.f
-
 $ make
-
 $ ./main
 ```
 
